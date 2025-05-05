@@ -95,8 +95,8 @@ nav a {
 .collection-grid {
     display: flex;
     gap: 20px;
-    justify-content: center;
-    text-align: center;
+    flex-flow: row wrap;
+    margin: 100px;
 }
 
 .collection-item {
