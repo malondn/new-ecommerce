@@ -11,3 +11,7 @@ function showSlides() {
 
 setInterval(showSlides, 3000); // Change slide every 3 seconds
 showSlides(); // Initial call
+
+document.querySelector(".logo").addEventListener("click", function () {
+  window.location.href = "index.html"
+})
