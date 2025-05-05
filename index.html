@@ -3,52 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luxury Online Shop</title>
+  <title>Luxury Watch Retail</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-
 </head>
 <body>
-<nav>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Shop</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
+
+<!-- Header & Navigation -->
 <header>
-  <h1>Exclusive Collection</h1>
+  <a class="logo" href="index.html">Lontong Retail Store</a>
+  <nav>
+    <ul>
+      <li><a href="#index.html">Home</a></li>
+      <li><a href="#collection.html">Collections</a></li>
+      <li><a href="#about.html">About</a></li>
+      <li><a href="#contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="cart">
+    <a href="#">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 3h2l3.6 7.59-1.35 2.45A2 2 0 0 0 9 17h9a2 2 0 0 0 1.79-1.1L21 9H6.42" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="9" cy="20" r="2" fill="gold"/>
+        <circle cx="17" cy="20" r="2" fill="gold"/>
+      </svg>
+    </a>
+  </div>
 </header>
-<br>
+
+<!-- Hero Section -->
 <section class="hero">
-  <h2>Luxury Items, Timeless Designs</h2>
-  <button id="shopButton">Shop Now</button>
+  <div class="hero-content">
+    <h2>Elevate Your Time. Own the Legacy.</h2>
+    <a href="#collection.html" class="cta-btn">Shop Now</a>
+  </div>
 </section>
 
-<section class="featured-products">
-  <h2>Featured Collection</h2>
-  <div class="products">
-    <div class="product">
-      <img src="https://www.prouds.com.au/content/products/fossil-neutra-ladies-watch-5529284-204042.jpg?width=1600" alt="Luxury Product">
-      <h3>Accesories</h3>
-      <p>$299</p>
+<!-- Featured Collections -->
+<section class="collections">
+  <h2>Featured Collections</h2>
+  <div class="collection-grid">
+    <div class="collection-item">
+    <img src="https://dreamspakistan.com/cdn/shop/files/74698_1.webp?v=1739796669&width=600" alt="luxury">
+    <p>Luxury Watch</p>
     </div>
-    <div class="product">
-      <img src="https://kinship.jp/cdn/shop/files/Cuirmagxbrowntabby1_898af37f-2261-4eec-844b-0c54248051b8.png?v=1745479919&width=750" alt="Luxury Product">
-      <h3>Leather Bag</h3>
-      <p>$499</p>
+    <div class="collection-item"><img src="https://aidstation.com.au/cdn/shop/files/coros-pace-pro-black-silicone_631eeeb3-311d-4f84-bc84-55609d638024.png?v=1730079749&width=640" alt="sport">
+    <p>Sport Watch</p>
     </div>
-    <div class="product">
-      <img src="https://www.reiss.com/cms/resource/blob/976838/78c7ee422947a53d786b8deb107425fe/nybg-1-data.jpg" alt="clothes">
-      <h3>Clothes</h3>
-      <p>$50</p>
+    <div class="collection-item"><img src="https://gigandet.com/media/df/8d/15/1673342422/Gigandet_Klassische_Uhren_Kategorie.webp?ts=1676107144" alt="classic">
+    <p>Classic Watch</p>
     </div>
   </div>
 </section>
 
+<!-- Best Sellers -->
+<section class="best-sellers">
+  <h2>Best Sellers</h2>
+  <div class="slideshow">
+    <img src="https://www.hardybrothers.com.au/cdn/shop/files/HB_Website_Product_Template_Dev09_03321ee4-2f2e-4c8d-a65d-9300acaeec24_600x.png?v=1733371307" alt="Luxury Watch">
+    <img src="https://aidstation.com.au/cdn/shop/files/coros-pace-pro-navy.png?v=1730155181&width=640" alt="Sport Watch">
+    <img src="https://coltonjamesbrand.com/cdn/shop/products/T-CLA-G_VB_S-CLA-G_MO-BG-min_e89c2b0f-e3ec-44cd-b99e-0dd33f731df0.png?v=1620319038&width=3000" alt="Classic Watch">
+  </div>
+</section>
+<!-- Newsletter Signup -->
+<section class="newsletter">
+  <h2>Join Our Exclusive Club</h2>
+  <input type="email" placeholder="Enter your email">
+  <button>Subscribe</button>
+</section>
+
+<!-- Footer -->
 <footer>
-  <p>&copy; 2025 Luxury Shop. All rights reserved.</p>
+  <p>© 2025 Timeless Elegance | All Rights Reserved</p>
 </footer>
-<script src="landing-page.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
