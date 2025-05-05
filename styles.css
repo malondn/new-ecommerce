@@ -186,3 +186,22 @@ footer {
     padding: 20px;
     background: #111;
 }
+
+/* collection.html */
+.collections {
+    margin-top: 80px;
+}
+.collection-item a {
+    text-decoration: none;
+    color: white;
+
+}
+.collection-item:hover {
+    transform: scale(1.1); /* Enlarges slightly */
+    box-shadow: 0 0 15px gold; /* Glowing effect */
+}
+.collection-item {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
