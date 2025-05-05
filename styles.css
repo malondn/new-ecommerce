@@ -206,3 +206,9 @@ footer {
     border-radius: 10px;
     transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 
+}
+
+.collection-item p {
+    margin: 0;
+}
+
