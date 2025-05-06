@@ -28,3 +28,33 @@ document.getElementById("about-link").addEventListener("click", function() {
 document.getElementById("contact-link").addEventListener("click", function() {
     window.location.href = "contact.html"; // Update with your actual collections page URL
 });
+
+/* cart.html */
+document.addEventListener("DOMContentLoaded", function() {
+  const quantityInputs = document.querySelectorAll(".quantity");
+  const removeButtons = document.querySelectorAll(".remove");
+  const totalPriceElement = document.getElementById("total-price");
+
+  function updateTotalPrice() {
+    let total = 0;
+    document.querySelectorAll(".cart-item").forEach(item => {
+      const price = parseFloat(item.querySelector("p").textContent.replace("Price: $", ""));
+      const quantity = item.querySelector(".quantity").value;
+      total += price * quantity;
+    });
+    totalPriceElement.textContent = `$${total.toFixed(2)}`;
+  }
+
+  quantityInputs.forEach(input => {
+    input.addEventListener("change", updateTotalPrice);
+  });
+
+  removeButtons.forEach(button => {
+    button.addEventListener("click", function() {
+      this.closest(".cart-item").remove();
+      updateTotalPrice();
+    });
+  });
+
+  updateTotalPrice();
+});
