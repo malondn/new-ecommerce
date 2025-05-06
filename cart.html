@@ -27,38 +27,18 @@
 </header>
 
 <section class="cart-page">
-  <div class="cart-item">
-    <img src="watch1.jpg" alt="Luxury Watch">
-    <div class="item-details">
-      <h2>Luxury Watch Model A</h2>
-      <p>Price: $499</p>
-      <label for="quantity">Quantity:</label>
-      <input type="number" value="1" class="quantity">
-      <button class="remove">Remove</button>
-    </div>
-  </div>
-
-  <div class="cart-item">
-    <img src="watch2.jpg" alt="Elegant Watch">
-    <div class="item-details">
-      <h2>Elegant Watch Model B</h2>
-      <p>Price: $799</p>
-      <label for="quantity">Quantity:</label>
-      <input type="number" value="1" class="quantity">
-      <button class="remove">Remove</button>
-    </div>
-  </div>
-
+  <div id="cart-items"></div> <!-- JavaScript will populate this dynamically -->
   <div class="cart-total">
     <h3>Total: <span id="total-price">$0</span></h3>
     <button class="checkout">Proceed to Checkout</button>
   </div>
 </section>
+
   <footer>
     <p>© 2025 Lontong Luxury Watches | All Rights Reserved</p>
   </footer>
   </div>
 
-  <script src="index.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
