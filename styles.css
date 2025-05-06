@@ -7,6 +7,7 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 /* Header & Navigation */
@@ -213,3 +214,39 @@ footer {
     margin: 0;
 }
 
+/* about.html */
+.hero-about {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #1a1a1a, #333);
+}
+
+button {
+    background: gold;
+    padding: 10px 20px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button:hover {
+    background: white;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+.backstory {
+    margin: 0 50px;
+}
+
+.hero-brand {
+    margin: 0 60px;
+}
+
+.cta-about {
+    margin-top: 50px;
+}
