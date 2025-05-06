@@ -281,3 +281,47 @@ input, textarea {
 .social-links a:hover {
     text-decoration: underline;
 }
+
+/* cart.html */
+.cart-page {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.cart-item img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex-grow: 1;
+    text-align: left;
+}
+.remove {
+    background: red;
+    padding: 8px 12px;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.checkout {
+    background: gold;
+    padding: 12px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkout:hover {
+    background: white;
+}
