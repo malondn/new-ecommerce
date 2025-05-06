@@ -250,3 +250,34 @@ button a {
 .cta-about {
     margin-top: 50px;
 }
+
+/* contact.html */
+.contact-info {
+    padding: 30px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
+
+.social-links a {
+    color: gold;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
