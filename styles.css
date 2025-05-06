@@ -364,3 +364,12 @@ input, textarea {
 .describtion {
     margin: 0 200px;
 }
+
+.random-products {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Adds space between products */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 40px;
+}
+
