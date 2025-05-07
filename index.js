@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
 
   // Handle "Buy Now" Click for All Products
+document.addEventListener("DOMContentLoaded", function() {
   document.querySelectorAll(".buy-now").forEach(button => {
     button.addEventListener("click", function() {
       const product = {
@@ -71,6 +72,9 @@ document.addEventListener("DOMContentLoaded", function() {
         price: parseFloat(this.dataset.price) || 0,
         image: this.dataset.image
       };
+    });
+  });
+});
 
       cart.push(product);
       sessionStorage.setItem("cart", JSON.stringify(cart));
