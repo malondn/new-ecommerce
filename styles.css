@@ -338,14 +338,18 @@ input, textarea {
 
 .buy-now {
     background: gold;
-    padding: 12px;
-    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
     font-weight: bold;
-    cursor: pointer;
+    border-radius: 15px;
 }
 
 .buy-now:hover {
-    background: white;
+    background: black;
+    color: gold;
+    box-shadow: 0 0 10px gold;
+    transform: scale(1.05); /* Slightly enlarges the button */
 }
 
 .product-details ul {
@@ -371,5 +375,37 @@ input, textarea {
     gap: 20px; /* Adds space between products */
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     padding: 40px;
+}
+
+.cta-about button {
+    background: gold;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.cta-about button:hover {
+    background: black;
+    color: gold;
+    box-shadow: 0 0 10px gold;
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+.contact-form button {
+    background: gold;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.contact-form button:hover {
+    background: black;
+    color: gold;
+    box-shadow: 0 0 10px gold;
+    transform: scale(1.05); /* Slightly enlarges the button */
 }
 
