@@ -125,3 +125,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   renderCart(); // Initial render
 });
+
+/* scrolling effect */
+document.addEventListener("scroll", function() {
+  let fadeSections = document.querySelectorAll(".fade-section");
+
+  fadeSections.forEach(section => {
+    let sectionTop = section.getBoundingClientRect().top;
+    let windowHeight = window.innerHeight;
+
+    if (sectionTop < windowHeight * 0.9) {
+      section.classList.add("fade-in");
+    }
+  });
+});
