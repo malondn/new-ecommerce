@@ -58,13 +58,14 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .hero h2 {
     font-size: 36px;
     text-align: center;
-    margin-top: -180px
+    margin-right: 600px;
 }
 
 .cta-btn {
@@ -73,8 +74,8 @@ nav a {
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
-    margin: 250px;
     border-radius: 15px;
+    margin-right: 600px;
 }
 .cta-btn:hover {
     background: black;
@@ -468,4 +469,16 @@ input, textarea {
     color: gold;
     box-shadow: 0 0 10px gold;
     transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* scrolling effect */
+.fade-section {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px); /* Slight downward shift */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
