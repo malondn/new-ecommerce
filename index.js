@@ -74,3 +74,54 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+/* quantity */
+document.addEventListener("DOMContentLoaded", function () {
+  let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+  const cartContainer = document.querySelector("#cart-items");
+  const totalPriceElement = document.getElementById("total-price");
+
+  function renderCart() {
+    cartContainer.innerHTML = "";
+    let total = 0;
+
+    cart.forEach((product, index) => {
+      if (!product.quantity) product.quantity = 1; // Default to 1
+
+      total += product.price * product.quantity;
+
+      const cartItem = document.createElement("div");
+      cartItem.classList.add("cart-item");
+      cartItem.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" width="80">
+        <p>${product.name} - $${product.price}</p>
+        <div class="quantity-controls">
+          <button class="decrease" data-index="${index}">-</button>
+          <span class="quantity">${product.quantity}</span>
+          <button class="increase" data-index="${index}">+</button>
+        </div>
+        <button class="remove-item" data-index="${index}">Remove</button>
+      `;
+      cartContainer.appendChild(cartItem);
+    });
+
+    totalPriceElement.textContent = `$${total}`;
+  }
+
+  // Quantity Update Logic
+  cartContainer.addEventListener("click", function (event) {
+    const index = event.target.dataset.index;
+    if (event.target.classList.contains("increase")) {
+      cart[index].quantity++;
+    } else if (event.target.classList.contains("decrease")) {
+      if (cart[index].quantity > 1) cart[index].quantity--;
+    } else if (event.target.classList.contains("remove-item")) {
+      cart.splice(index, 1);
+    }
+
+    sessionStorage.setItem("cart", JSON.stringify(cart));
+    renderCart(); // Refresh UI
+  });
+
+  renderCart(); // Initial render
+});
