@@ -409,3 +409,61 @@ input, textarea {
     transform: scale(1.05); /* Slightly enlarges the button */
 }
 
+/* login form */
+.login-container {
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(17, 17, 17, 0.6);
+    border-radius: 10px;
+    text-align: center;
+    margin: 50px 0 100px 555px;
+    backdrop-filter: blur(8px);
+}
+
+.login-container h2 {
+    font-size: 28px;
+    color: gold;
+    font-weight: bold;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    margin-right: 25px;
+}
+
+.login-container label {
+    font-size: 18px;
+    color: gold;
+    text-align: left;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid gold;
+    background: #222;
+    color: white;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.login-container button:hover {
+    background: black;
+    color: gold;
+    box-shadow: 0 0 10px gold;
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
