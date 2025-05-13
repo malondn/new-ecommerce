@@ -194,7 +194,7 @@ footer {
 
 /* collection.html */
 .collections {
-    margin-top: 80px;
+    margin-top: 30px;
 
 }
 .collection-item a {
@@ -289,6 +289,7 @@ input, textarea {
 .cart-page {
     width: 80%;
     margin: 20px auto;
+    margin-bottom: 440px;
 }
 
 .cart-item {
